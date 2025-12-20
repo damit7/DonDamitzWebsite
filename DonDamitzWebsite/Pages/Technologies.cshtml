@@ -1,0 +1,339 @@
+﻿@page
+@model TechnologiesModel
+@{
+    ViewData["Title"] = "Technologies";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+
+            <h1 class="mb-4">Technologies Used</h1>
+            <p class="lead mb-5">
+                This website was built using modern web development technologies.
+                Here's a complete overview of the tech stack used to create this site.
+            </p>
+
+            <hr class="mb-5" />
+
+            <!-- Backend Technologies -->
+            <section class="mb-5">
+                <h2 class="h3 mb-4">
+                    <span class="badge bg-primary me-2">Backend</span>
+                    Server-Side Technologies
+                </h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">.NET 8</h5>
+                                <p class="card-text">
+                                    Modern, cross-platform framework from Microsoft.
+                                    Provides the foundation for building web applications.
+                                </p>
+                                <span class="badge bg-success">LTS Version</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">ASP.NET Core</h5>
+                                <p class="card-text">
+                                    High-performance web framework for building modern web applications.
+                                    Handles routing, HTTP requests, and server-side logic.
+                                </p>
+                                <span class="badge bg-info">Web Framework</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Razor Pages</h5>
+                                <p class="card-text">
+                                    Page-focused framework that makes building web UI cleaner and more productive.
+                                    Each page is self-contained with its own logic and view.
+                                </p>
+                                <span class="badge bg-secondary">Architecture Pattern</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">C# 12</h5>
+                                <p class="card-text">
+                                    Modern, type-safe programming language.
+                                    Used for all server-side logic and business rules.
+                                </p>
+                                <span class="badge bg-warning text-dark">Programming Language</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Frontend Technologies -->
+            <section class="mb-5">
+                <h2 class="h3 mb-4">
+                    <span class="badge bg-success me-2">Frontend</span>
+                    Client-Side Technologies
+                </h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML5 & CSS3</h5>
+                                <p class="card-text">
+                                    Modern web standards for structure and styling.
+                                    Provides semantic markup and responsive design capabilities.
+                                </p>
+                                <span class="badge bg-danger">Web Standards</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Bootstrap 5</h5>
+                                <p class="card-text">
+                                    Popular CSS framework for building responsive, mobile-first websites.
+                                    Provides pre-built components and utility classes.
+                                </p>
+                                <span class="badge bg-primary">CSS Framework</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Razor Syntax</h5>
+                                <p class="card-text">
+                                    Templating language that allows mixing C# code with HTML.
+                                    Enables dynamic content generation on the server.
+                                </p>
+                                <span class="badge bg-info">Template Engine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">jQuery</h5>
+                                <p class="card-text">
+                                    JavaScript library that simplifies DOM manipulation and event handling.
+                                    Used by Bootstrap components for interactivity.
+                                </p>
+                                <span class="badge bg-warning text-dark">JavaScript Library</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Database & Data Access -->
+            <section class="mb-5">
+                <h2 class="h3 mb-4">
+                    <span class="badge bg-warning text-dark me-2">Database</span>
+                    Data Storage & Access
+                </h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">SQL Server LocalDB</h5>
+                                <p class="card-text">
+                                    Lightweight version of SQL Server for development.
+                                    Will store contact form submissions and site data.
+                                </p>
+                                <span class="badge bg-success">Database Engine</span>
+                                <span class="badge bg-secondary ms-2">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">ADO.NET</h5>
+                                <p class="card-text">
+                                    Data access technology for working directly with databases.
+                                    Provides full control over SQL queries and database operations.
+                                </p>
+                                <span class="badge bg-info">Data Access</span>
+                                <span class="badge bg-secondary ms-2">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">T-SQL</h5>
+                                <p class="card-text">
+                                    Microsoft's extension of SQL for querying and managing data.
+                                    Used for creating tables, queries, and stored procedures.
+                                </p>
+                                <span class="badge bg-primary">Query Language</span>
+                                <span class="badge bg-secondary ms-2">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Development Tools -->
+            <section class="mb-5">
+                <h2 class="h3 mb-4">
+                    <span class="badge bg-dark me-2">Tools</span>
+                    Development Environment
+                </h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Visual Studio 2022</h5>
+                                <p class="card-text">
+                                    Professional IDE for .NET development.
+                                    Provides code editing, debugging, and project management.
+                                </p>
+                                <span class="badge bg-primary">IDE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">IIS Express / Kestrel</h5>
+                                <p class="card-text">
+                                    Local development web servers for testing the application.
+                                    Kestrel is the cross-platform web server for ASP.NET Core.
+                                </p>
+                                <span class="badge bg-success">Web Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Security Features -->
+            <section class="mb-5">
+                <h2 class="h3 mb-4">
+                    <span class="badge bg-danger me-2">Security</span>
+                    Built-in Protection
+                </h2>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">HTTPS/SSL</h5>
+                                <p class="card-text">
+                                    Encrypted connections for secure data transmission.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Anti-Forgery Tokens</h5>
+                                <p class="card-text">
+                                    CSRF protection built into form submissions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+@*                     <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Parameterized Queries</h5>
+                                <p class="card-text">
+                                    SQL injection prevention through proper parameter handling.
+                                </p>
+                            </div>
+                        </div>
+                    </div> *@
+                </div>
+            </section>
+
+            <!-- Architecture & Patterns -->
+            <section class="mb-5">
+                <h2 class="h3 mb-4">Architecture & Design Patterns</h2>
+
+                <div class="alert alert-info">
+                    <h5 class="alert-heading">Razor Pages Pattern (MVVM-like)</h5>
+                    <p class="mb-0">
+                        This site follows the Razor Pages pattern, where each page combines its view (.cshtml)
+                        with its model/logic (.cshtml.cs). This provides a clean separation of concerns while
+                        keeping related code together, making it easier to maintain and understand.
+                    </p>
+                </div>
+
+                <div class="alert alert-secondary">
+                    <h5 class="alert-heading">Responsive Design</h5>
+                    <p class="mb-0">
+                        Built mobile-first with Bootstrap's responsive grid system.
+                        The site automatically adapts to different screen sizes (phones, tablets, desktops).
+                    </p>
+                </div>
+            </section>
+
+            <!-- Why These Technologies -->
+            <section class="mb-5">
+                <h2 class="h3 mb-4">Why These Technologies?</h2>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern & Professional</h5>
+                        <p class="card-text">
+                            I chose .NET 8 and ASP.NET Core because they represent the current state of
+                            Microsoft's web development platform. These are the technologies being used
+                            in production by companies worldwide.
+                        </p>
+
+                        <h5 class="card-title mt-4">Practical Learning</h5>
+                        <p class="card-text">
+                            Razor Pages was selected for its simplicity and page-focused architecture,
+                            which is perfect for a portfolio site while still teaching modern .NET concepts.
+                        </p>
+
+                        <h5 class="card-title mt-4">Full Control</h5>
+                        <p class="card-text">
+                            Using ADO.NET instead of an ORM gives me direct control over database operations
+                            and SQL queries, demonstrating understanding of fundamental data access patterns.
+                        </p>
+
+                        <h5 class="card-title mt-4">Industry Standard</h5>
+                        <p class="card-text">
+                            Bootstrap ensures the site looks professional and works across all devices,
+                            following industry-standard design practices.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center mt-5 p-4 bg-light rounded">
+                <h3>Interested in Technical Details?</h3>
+                <p>I'm happy to discuss the technical decisions and implementation details of this site.</p>
+                <a asp-page="/Contact" class="btn btn-primary btn-lg">Get in Touch</a>
+            </section>
+
+        </div>
+    </div>
+</div>

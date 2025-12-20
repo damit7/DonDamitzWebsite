@@ -1,0 +1,288 @@
+﻿@page
+@model DonDamitzWebsite.Pages.PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold">Privacy Policy</h1>
+                <p class="text-muted">
+                    <i class="bi bi-calendar3 me-2"></i>Last Updated: December 2025
+                </p>
+            </div>
+
+            <!-- Privacy Policy Content -->
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body p-4 p-md-5">
+
+                    <!-- Introduction -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-shield-check text-primary me-2"></i>Introduction
+                        </h2>
+                        <p>
+                            Welcome to my personal portfolio website. This Privacy Policy explains how I collect, use,
+                            and protect your personal information when you visit my website or use the contact form.
+                            I am committed to ensuring your privacy and protecting any information you share with me.
+                        </p>
+                    </section>
+
+                    <!-- Information I Collect -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-database text-primary me-2"></i>Information I Collect
+                        </h2>
+
+                        <h3 class="h6 fw-semibold mb-2">Personal Information You Provide</h3>
+                        <p>When you use the contact form on this website, I collect:</p>
+                        <ul>
+                            <li><strong>Name:</strong> Your full name to address you properly in responses</li>
+                            <li><strong>Email Address:</strong> To respond to your inquiries</li>
+                            <li><strong>Subject and Message:</strong> The content you provide in the contact form</li>
+                            <li><strong>IP Address:</strong> For security purposes and to prevent spam/abuse</li>
+                            <li><strong>Submission Date/Time:</strong> To track when messages were sent</li>
+                        </ul>
+
+                        <h3 class="h6 fw-semibold mb-2 mt-4">Automatically Collected Information</h3>
+                        <p>When you visit this website, certain technical information may be collected automatically:</p>
+                        <ul>
+                            <li>Browser type and version</li>
+                            <li>Operating system</li>
+                            <li>Pages you visit and time spent on each page</li>
+                            <li>Referring website (if applicable)</li>
+                        </ul>
+                    </section>
+
+                    <!-- How I Use Your Information -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-gear text-primary me-2"></i>How I Use Your Information
+                        </h2>
+                        <p>I use the information collected for the following purposes:</p>
+                        <ul>
+                            <li><strong>Communication:</strong> To respond to your inquiries and messages</li>
+                            <li><strong>Security:</strong> To protect against spam, abuse, and fraudulent activity</li>
+                            <li><strong>Website Improvement:</strong> To understand how visitors use my site and improve the user experience</li>
+                            <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
+                        </ul>
+                        <p class="mt-3">
+                            <strong>I will never:</strong>
+                        </p>
+                        <ul>
+                            <li>Sell, rent, or trade your personal information to third parties</li>
+                            <li>Use your email address for unsolicited marketing communications</li>
+                            <li>Share your information without your explicit consent (except as required by law)</li>
+                        </ul>
+                    </section>
+
+                    <!-- Data Storage and Security -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-lock text-primary me-2"></i>Data Storage and Security
+                        </h2>
+                        <p>
+                            Your contact form submissions are stored in a SQL Server database. I implement
+                            several security measures to protect your information, including:
+                        </p>
+                        <ul>
+@*                             <li>Secure HTTPS connection for all data transmission</li>
+                            <li>Database encryption and access controls</li>
+                            <li>Protection against SQL injection and cross-site scripting (XSS) attacks</li>
+                            <li>Anti-forgery token validation to prevent CSRF attacks</li>
+                            <li>Rate limiting to prevent spam and abuse</li> *@
+
+                            <li>
+                                <strong>SQL Injection Prevention:</strong> All database queries use parameterized
+                                statements to prevent SQL injection attacks
+                            </li>
+                            <li>
+                                <strong>XSS Prevention:</strong> ASP.NET Core automatically encodes all output
+                                to prevent cross-site scripting attacks
+                            </li>
+                            <li>
+                                <strong>CSRF Protection:</strong> Anti-forgery tokens prevent cross-site request
+                                forgery attacks
+                            </li>
+                            <li>
+                                <strong>Rate Limiting:</strong> Maximum 5 submissions per IP address per 15 minutes
+                                to prevent spam and abuse
+                            </li>
+                            <li>
+                                <strong>Input Validation:</strong> All form inputs are validated on both client and
+                                server side
+                            </li>
+                            <li>
+                                <strong>HTTPS in Production:</strong> When deployed, the site uses HTTPS to encrypt
+                                data in transit
+                            </li>
+                        </ul>
+                        <p class="mt-3">
+                            However, please note that no method of transmission over the internet or electronic storage
+                            is 100% secure. While I strive to protect your personal information, I cannot guarantee
+                            absolute security.
+                        </p>
+                    </section>
+
+                    <!-- Cookies and Tracking -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-cookie text-primary me-2"></i>Cookies and Tracking
+                        </h2>
+                        <p>
+                            This website uses minimal cookies necessary for basic functionality:
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Session Cookies:</strong> Temporary cookies that expire when you close your browser,
+                                used for form functionality and security
+                            </li>
+                            <li><strong>Anti-Forgery Tokens:</strong> Security cookies to prevent cross-site request forgery attacks</li>
+                        </ul>
+                        <p class="mt-3">
+                            I do not use third-party tracking cookies or analytics services. Your browsing activity on
+                            this website is not tracked or shared with third parties.
+                        </p>
+                    </section>
+
+                    <!-- Third-Party Services -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-link-45deg text-primary me-2"></i>Third-Party Services
+                        </h2>
+                        <p>
+                            This website may contain links to external websites (such as LinkedIn, GitHub, or other
+                            professional profiles). I am not responsible for the privacy practices or content of these
+                            third-party sites. I encourage you to review the privacy policies of any external sites you visit.
+                        </p>
+                    </section>
+
+                    <!-- Data Retention -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-clock-history text-primary me-2"></i>Data Retention
+                        </h2>
+                        <p>
+                            Contact form submissions are retained for as long as necessary to respond to your inquiry
+                            and for legitimate business purposes. If you would like your information to be deleted,
+                            please contact me using the information provided below.
+                        </p>
+                    </section>
+
+                    <!-- Your Rights -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-person-check text-primary me-2"></i>Your Rights
+                        </h2>
+                        <p>You have the following rights regarding your personal information:</p>
+                        <ul>
+                            <li><strong>Access:</strong> Request a copy of the personal information I have about you</li>
+                            <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+                            <li><strong>Deletion:</strong> Request deletion of your personal information</li>
+                            <li><strong>Objection:</strong> Object to the processing of your personal information</li>
+                        </ul>
+                        <p class="mt-3">
+                            To exercise any of these rights, please contact me using the information provided in the
+                            "Contact Information" section below.
+                        </p>
+                    </section>
+
+                    <!-- Children's Privacy -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-people text-primary me-2"></i>Children's Privacy
+                        </h2>
+                        <p>
+                            This website is not intended for children under the age of 13. I do not knowingly collect
+                            personal information from children under 13. If you are a parent or guardian and believe
+                            your child has provided personal information, please contact me so I can delete the information.
+                        </p>
+                    </section>
+
+                    <!-- Changes to Privacy Policy -->
+                    <section class="mb-5">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-arrow-repeat text-primary me-2"></i>Changes to This Privacy Policy
+                        </h2>
+                        <p>
+                            I may update this Privacy Policy from time to time to reflect changes in my practices or
+                            for legal, operational, or regulatory reasons. Any changes will be posted on this page with
+                            an updated "Last Updated" date. I encourage you to review this Privacy Policy periodically.
+                        </p>
+                    </section>
+
+                    <!-- Contact Information -->
+                    <section class="mb-0">
+                        <h2 class="h4 fw-bold mb-3">
+                            <i class="bi bi-envelope text-primary me-2"></i>Contact Information
+                        </h2>
+                        <p>
+                            If you have any questions, concerns, or requests regarding this Privacy Policy or how
+                            your information is handled, please contact me:
+                        </p>
+                        <div class="mt-3 p-3 bg-light rounded">
+                            <p class="mb-2"><strong>Don Damitz</strong></p>
+                            <p class="mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i>
+                                <a href="mailto:dondamitz@gmail.com">dondamitz@gmail.com</a>
+                            </p>
+                            <p class="mb-2">
+                                <i class="bi bi-globe me-2"></i>
+                                <a asp-page="/Contact">Contact Form</a>
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi bi-linkedin me-2"></i>
+                                <a href="https://www.linkedin.com/in/don-damitz-b15a8a23/" target="_blank">LinkedIn Profile</a>
+                            </p>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- Consent Notice -->
+            <div class="alert alert-info border-0 shadow-sm" role="alert">
+                <h5 class="alert-heading">
+                    <i class="bi bi-info-circle-fill me-2"></i>Your Consent
+                </h5>
+                <p class="mb-0">
+                    By using this website and submitting information through the contact form, you consent to the
+                    collection and use of your information as described in this Privacy Policy.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    section h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #e9ecef;
+        padding-bottom: 0.5rem;
+    }
+
+    section h3 {
+        color: #495057;
+    }
+
+    section ul {
+        line-height: 1.8;
+    }
+
+    .card {
+        border-radius: 0.5rem;
+    }
+
+    @@media (max-width: 768px) {
+        .card-body
+
+    {
+        padding: 1.5rem !important;
+    }
+
+    }
+</style>

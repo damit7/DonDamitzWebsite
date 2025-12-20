@@ -1,0 +1,264 @@
+﻿@page
+@model ResumeModel
+@{
+    ViewData["Title"] = "Resume";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+
+            <!-- Header with Download Button -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1>Resume</h1>
+                <a asp-page-handler="DownloadResume" class="btn btn-success">
+                    <i class="bi bi-file-earmark-arrow-down me-2"></i>
+                    Download Full Resume (DOCX)
+                </a>
+            </div>
+
+            <hr />
+
+            <!-- Professional Summary -->
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Professional Summary</h2>
+                <p class="lead">
+                    Results-driven Software Developer with over 20 years of experience designing, 
+                    developing, and maintaining applications for higher education, insurance, 
+                    and government organizations. 8+ years of C#, ASP.NET, .NET Framework 4.x, and
+                    SQL Server/Oracle development supporting mission-critical applications for U.S. Army 
+                    operations. Most recently gained valuable experience with legacy ERP systems and seeking 
+                    to leverage my extensive Microsoft development background in a modern C# application 
+                    development role. Strong collaborator with excellent communication skills and a 
+                    commitment to code quality and best practices.
+                </p>
+            </section>
+
+            <!-- Skills -->
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Technical Skills</h2>
+                <div class="row">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="col-md-6">
+                        <h5>Programming Languages</h5>
+                        <ul>
+                            <li>C#</li>
+                            <li>VB.NET</li>
+                            <li>SQL</li>
+                            <li>HTML / CSS</li>
+                            <li>JavaScript</li>
+                            <li>VBA (Excel)</li>
+                            <li>ColdFusion</li>
+                            <li>Ellucian Envision BASIC</li>
+                            <li>Delphi</li>
+                            <li>FoxPro</li>
+                        </ul>
+
+                        <h5 class="mt-4">Frameworks & Platforms</h5>
+                        <ul>
+                            <li>.NET (Framework, 6, 8)</li>
+                            <li>ASP.NET (WebForms, Core/Razor Pages)</li>
+                            <li>ADO.NET</li>
+                        </ul>
+
+                        <h5 class="mt-4">Databases</h5>
+                        <ul>
+                            <li>SQL Server</li>
+                            <li>Oracle</li>
+                            <li>UniData</li>
+                            <li>MS Access</li>
+                            <li>Paradox</li>
+                        </ul>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="col-md-6">
+                        <h5>Development & Database Tools</h5>
+                        <ul>
+                            <li>Visual Studio (2013–2022)</li>
+                            <li>Team Foundation Server (TFS)</li>
+                            <li>SQL Server Management Studio (SSMS)</li>
+                            <li>TOAD for Oracle</li>
+                            <li>Colleague Studio</li>
+                        </ul>
+
+                        <h5 class="mt-4">Reporting Tools</h5>
+                        <ul>
+                            <li>Crystal Reports</li>
+                            <li>Report Builder</li>
+                            <li>Entrinsik Informer</li>
+                        </ul>
+
+                        <h5 class="mt-4">Enterprise Systems</h5>
+                        <ul>
+                            <li>Ellucian Colleague ERP</li>
+                        </ul>
+
+                        <h5 class="mt-4">Operating Systems & Scripting</h5>
+                        <ul>
+                            <li>Windows</li>
+                            <li>Command Prompt</li>
+                            <li>PowerShell</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Work Experience -->
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Professional Experience</h2>
+
+                <!-- Job 1: Carl Sandburg College -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h5>Executive Director of Administrative Computing/Programmer</h5>
+                        <span class="text-muted">2023–2025</span>
+                    </div>
+                    <p class="text-muted mb-2">Carl Sandburg College — Galesburg, IL</p>
+                    <ul>
+                        <li>Provided custom application development and support for the Ellucian Colleague ERP system across CORE, ST, CF, HR, FA, and CA modules, enhancing system efficiency and supporting Finance, HR, Student, Financial Aid, and Advancement operations</li>
+                        <li>Designed, programmed, and tested software solutions in Colleague Studio using Envision BASIC within structured workspaces</li>
+                        <li>Executed UniData queries and managed database structures, including creating and modifying files/tables via command-line interfaces, ensuring application functionality and data integrity</li>
+                        <li>Utilized Entrinsik Informer as a primary research tool for querying UniData database files/tables, and created or modified reports for users as needed</li>
+                        <li>Authored and maintained technical documentation to support users and streamline system maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Job 2: BITCO Insurance Companies -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h5>Senior Software Developer</h5>
+                        <span class="text-muted">2022–2023</span>
+                    </div>
+                    <p class="text-muted mb-2">BITCO Insurance Companies — Davenport, IA</p>
+                    <ul>
+                        <li>Converted three MS Access applications into a unified C# web application with SQL Server backend, improving system performance and maintainability</li>
+                        <li>Utilized .NET 6, ASP.NET Core, and C# 10 for new application development</li>
+                        <li>Designed, developed, and maintained SQL Server stored procedures, tables, views, and functions to optimize data operations</li>
+                    </ul>
+                </div>
+
+                <!-- Job 3: Sedona Technologies / Vista / Bowhead / Aleknagik -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h5>Programmer Analyst III – Army Contractor</h5>
+                        <span class="text-muted">2014–2022</span>
+                    </div>
+                    <p class="text-muted mb-2">Sedona Technologies / Vista / Bowhead / Aleknagik — Rock Island, IL</p>
+                    <ul>
+                        <li>Maintained mission-critical ASP.NET web applications using C#, VB.NET, .NET Framework, JavaScript, and HTML to support U.S. Army operations</li>
+                        <li>Designed, developed, and maintained Oracle packages/tables and SQL Server stored procedures/tables/views/functions to optimize application performance</li>
+                        <li>Managed source code and collaborated with development team using Team Foundation Server (TFS) for version control and code integration</li>
+                        <li>Assisted in migrating Army applications from Oracle to SQL Server, including schema conversion and code updates</li>
+                        <li>Provided technical troubleshooting and user support for enterprise applications</li>
+                        <li>Earned Army certificate award in June 2016 for outstanding service and technical excellence</li>
+                    </ul>
+                </div>
+
+                <!-- Job 4: TEKsystems / John Deere -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h5>Full Stack .NET Developer</h5>
+                        <span class="text-muted">2013–2014</span>
+                    </div>
+                    <p class="text-muted mb-2">TEKsystems / John Deere — Milan, IL</p>
+                    <ul>
+                        <li>Refactored a monolithic VB.NET/.NET Framework Windows Service into three independent services, enabling parallel processing of nightly dealer data, improving performance, and expanding reporting flexibility</li>
+                        <li>Developed and maintained additional VB.NET business applications</li>
+                        <li>Created over 130 custom reports using VBA in Excel to improve dealer data analysis</li>
+                        <li>Developed and optimized SQL Server database components</li>
+                    </ul>
+                </div>
+
+                <!-- Job 5: Sedona Technologies (second stint) -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h5>Full Stack .NET Developer – Army Contractor</h5>
+                        <span class="text-muted">2013</span>
+                    </div>
+                    <p class="text-muted mb-2">Sedona Technologies — Rock Island, IL</p>
+                    <ul>
+                        <li>Rewrote the company's PII (Personally Identifiable Information) web application in C#, improving functionality, security, and long-term maintainability</li>
+                        <li>Developed and maintained other web applications using ASP.NET and C#/.NET Framework, including a custom SharePoint 2010 application</li>
+                        <li>Designed, developed, and maintained SQL Server stored procedures, tables, views, and functions</li>
+                    </ul>
+                </div>
+
+                <!-- Job 6: Sedona Group -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h5>Software Developer</h5>
+                        <span class="text-muted">2010–2013</span>
+                    </div>
+                    <p class="text-muted mb-2">Sedona Group — Moline, IL</p>
+                    <ul>
+                        <li>Created over 20 SQL Server stored procedures and maintained additional procedures supporting the large FoxPro payroll application and scheduled jobs</li>
+                        <li>Maintained and enhanced a large FoxPro payroll application, improving functionality, reliability, and overall system performance</li>
+                        <li>Developed and maintained VB.NET/.NET Framework and VB6 applications, including initial efforts to convert the payroll application from FoxPro to VB.NET</li>
+                        <li>Designed and maintained Crystal Reports to provide accurate, timely reporting for payroll and other business functions</li>
+                    </ul>
+                </div>
+
+                <!-- Job 7: RCH Innovative Technology Partners -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h5>ColdFusion Developer – Army Contractor</h5>
+                        <span class="text-muted">2006–2009</span>
+                    </div>
+                    <p class="text-muted mb-2">RCH Innovative Technology Partners — Rock Island, IL</p>
+                    <ul>
+                        <li>Maintained and enhanced the Army Electronic Product Support (AEPS) website, a complex portal linking multiple web applications, as one of six developers supporting core Army operations</li>
+                        <li>Developed and maintained web applications using CFML (ColdFusion MX7) and HTML, gaining extensive hands-on experience in web development</li>
+                        <li>Designed and implemented Oracle packages and tables to support core application functionality and improve data management</li>
+                    </ul>
+                </div>
+
+                <!-- Job 8: Gensoft Systems Inc. -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h5>Software Developer</h5>
+                        <span class="text-muted">2002–2009</span>
+                    </div>
+                    <p class="text-muted mb-2">Gensoft Systems Inc. — Geneseo, IL</p>
+                    <ul>
+                        <li>Maintained and enhanced accounting, audit, and billing functionality within the Gensoft application using Delphi and a Paradox database, supporting over 25 small telephone companies</li>
+                        <li>Created and maintained accounting, audit, and billing reports, including customized billing templates to meet unique client specifications, becoming the company's Report Builder specialist</li>
+                        <li>Assisted in the transition from Paradox to SQL Server</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Military -->
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Military Service</h2>
+                <div class="mb-3">
+                    <p class="text-muted mb-1">United States Army — Wiesbaden, Germany | 1993–1996</p>
+                    <ul>
+                        <li>Light Wheel Vehicle Mechanic, promoted to Assistant Motor Sergeant. Deployed to Bosnia-Herzegovina (1995–1996). Received three medals and three achievement awards.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Education</h2>
+                <div class="mb-3">
+                    <p class="text-muted mb-1">Black Hawk College — Moline, IL | 2002</p>
+                    <ul>
+                        <li>Associate of Applied Science, Computer Information Processing Programmer | GPA: 3.95/4.0</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center mt-5 p-4 bg-light rounded">
+                <h3>Interested in working together?</h3>
+                <p>I'd love to hear about opportunities that match my skills and experience.</p>
+                <a asp-page="/Contact" class="btn btn-primary btn-lg">Get in Touch</a>
+            </section>
+
+        </div>
+    </div>
+</div>

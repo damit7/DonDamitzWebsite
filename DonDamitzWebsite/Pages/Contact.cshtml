@@ -1,0 +1,219 @@
+﻿@page
+@model DonDamitzWebsite.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Page Header -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-3">Get In Touch</h1>
+                <p class="lead text-muted">
+                    Have a question or want to work together? I'd love to hear from you!
+                </p>
+            </div>
+
+            <!-- Success Message -->
+            @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    @Model.SuccessMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <!-- Error Message -->
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @Model.ErrorMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <!-- Contact Form -->
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4 p-md-5">
+                    <form method="post" asp-antiforgery="true">
+
+                        <!-- Name Field -->
+                        <div class="mb-4">
+                            <label asp-for="ContactMessage.Name" class="form-label fw-semibold">
+                                <i class="bi bi-person-fill me-2"></i>Your Name
+                            </label>
+                            <input asp-for="ContactMessage.Name"
+                                   class="form-control form-control-lg"
+                                   placeholder="John Doe"
+                                   autocomplete="name" />
+                            <span asp-validation-for="ContactMessage.Name" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="mb-4">
+                            <label asp-for="ContactMessage.Email" class="form-label fw-semibold">
+                                <i class="bi bi-envelope-fill me-2"></i>Email Address
+                            </label>
+                            <input asp-for="ContactMessage.Email"
+                                   type="email"
+                                   class="form-control form-control-lg"
+                                   placeholder="john.doe@example.com"
+                                   autocomplete="email" />
+                            <span asp-validation-for="ContactMessage.Email" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="mb-4">
+                            <label asp-for="ContactMessage.Subject" class="form-label fw-semibold">
+                                <i class="bi bi-chat-left-text-fill me-2"></i>Subject
+                            </label>
+                            <input asp-for="ContactMessage.Subject"
+                                   class="form-control form-control-lg"
+                                   placeholder="What would you like to discuss?" />
+                            <span asp-validation-for="ContactMessage.Subject" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="mb-4">
+                            <label asp-for="ContactMessage.Message" class="form-label fw-semibold">
+                                <i class="bi bi-pencil-fill me-2"></i>Message
+                            </label>
+                            <textarea asp-for="ContactMessage.Message"
+                                      class="form-control form-control-lg"
+                                      rows="6"
+                                      placeholder="Tell me about your project, question, or how I can help you..."
+                                      style="resize: vertical;"></textarea>
+                            <span asp-validation-for="ContactMessage.Message" class="text-danger small"></span>
+                            <div class="form-text">
+                                <small>
+                                    <i class="bi bi-info-circle me-1"></i>
+                                    (maximum 2000)
+                                </small>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="bi bi-send-fill me-2"></i>Send Message
+                            </button>
+                        </div>
+
+                        <!-- Security Notice -->
+                        <div class="mt-4 text-center">
+                            <small class="text-muted">
+                                <i class="bi bi-shield-check me-1"></i>
+                                Your information is secure and will never be shared with third parties.
+                            </small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Alternative Contact Methods -->
+            <div class="mt-5 text-center">
+                <h3 class="h5 mb-3 fw-semibold">Other Ways to Connect</h3>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="https://www.linkedin.com/in/don-damitz-b15a8a23/"
+                       target="_blank"
+                       class="btn btn-outline-primary"
+                       title="Connect on LinkedIn">
+                        <i class="bi bi-linkedin me-2"></i>LinkedIn
+                    </a>
+@*                     <a href="https://github.com/dondamitz"
+                       target="_blank"
+                       class="btn btn-outline-dark"
+                       title="View on GitHub">
+                        <i class="bi bi-github me-2"></i>GitHub
+                    </a> *@
+                    <a href="mailto:dondamitz@gmail.com"
+                       class="btn btn-outline-secondary"
+                       title="Send Email">
+                        <i class="bi bi-envelope me-2"></i>Email
+                    </a>
+                </div>
+                <p class="text-muted mt-3 small">
+                    <i class="bi bi-clock me-1"></i>
+                    I typically respond within 24-48 hours
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Auto-dismiss alerts after 5 seconds
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove();
+            });
+        }, 5000);
+
+        // Character counter for message field
+        document.addEventListener('DOMContentLoaded', function() {
+            const messageField = document.querySelector('textarea[name="ContactMessage.Message"]');
+            const maxLength = 2000;
+
+            if (messageField) {
+                const counterDiv = document.createElement('div');
+                counterDiv.className = 'form-text text-end';
+                counterDiv.innerHTML = '<small id="char-counter">0 / ' + maxLength + ' characters</small>';
+                messageField.parentNode.appendChild(counterDiv);
+
+                messageField.addEventListener('input', function() {
+                    const currentLength = this.value.length;
+                    const counter = document.getElementById('char-counter');
+                    counter.textContent = currentLength + ' / ' + maxLength + ' characters';
+
+                    if (currentLength > maxLength) {
+                        counter.classList.add('text-danger');
+                    } else if (currentLength > maxLength * 0.9) {
+                        counter.classList.remove('text-danger');
+                        counter.classList.add('text-warning');
+                    } else {
+                        counter.classList.remove('text-danger', 'text-warning');
+                    }
+                });
+            }
+        });
+    </script>
+}
+
+<style>
+    /* Custom styles for the contact form */
+    .form-control:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    .card {
+        border-radius: 1rem;
+    }
+
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .form-label {
+        color: #495057;
+        margin-bottom: 0.5rem;
+    }
+
+    @@media (max-width: 768px) {
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .card-body {
+            padding: 1.5rem !important;
+        }
+    }
+</style>

@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-3 mb-4">Welcome to My Professional Portfolio</h1>
+    <p class="lead">Experienced C# Developer seeking new opportunities</p>
+
+    <div class="row mt-5">
+        <div class="col-md-6 mx-auto">
+            <!-- Professional Photo -->
+            <img src="~/images/professional-photo.jpg"
+                 alt="Don Damitz - Professional Photo"
+                 class="img-fluid rounded-circle shadow-lg"
+                 style="max-width: 400px;" />
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h2>What I Bring to Your Team</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h4>💼 Experience</h4>
+                <p>Years of professional software development experience</p>
+            </div>
+            <div class="col-md-4">
+                <h4>🎯 Dedication</h4>
+                <p>Committed to continuous learning and growth</p>
+            </div>
+            <div class="col-md-4">
+                <h4>🤝 Team Player</h4>
+                <p>Strong communication and collaboration skills</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <a asp-page="/Resume" class="btn btn-primary btn-lg me-3">View My Resume</a>
+        <a asp-page="/About" class="btn btn-outline-primary btn-lg">Learn More About Me</a>
+    </div>
+</div>
