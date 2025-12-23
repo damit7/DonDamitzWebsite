@@ -10,7 +10,7 @@
 
             <h1 class="mb-4">Technologies Used</h1>
             <p class="lead mb-5">
-                This website was built using modern web development technologies.
+                This website was built using modern web development technologies and deployed to Microsoft Azure.
                 Here's a complete overview of the tech stack used to create this site.
             </p>
 
@@ -151,13 +151,12 @@
                     <div class="col-md-6 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h5 class="card-title">SQL Server LocalDB</h5>
+                                <h5 class="card-title">Azure SQL Database</h5>
                                 <p class="card-text">
-                                    Lightweight version of SQL Server for development.
-                                    Will store contact form submissions and site data.
+                                    Cloud-hosted relational database service from Microsoft Azure.
+                                    Stores contact form submissions with automatic backups and high availability.
                                 </p>
-                                <span class="badge bg-success">Database Engine</span>
-                                <span class="badge bg-secondary ms-2">Coming Soon</span>
+                                <span class="badge bg-success">Cloud Database</span>
                             </div>
                         </div>
                     </div>
@@ -168,10 +167,9 @@
                                 <h5 class="card-title">ADO.NET</h5>
                                 <p class="card-text">
                                     Data access technology for working directly with databases.
-                                    Provides full control over SQL queries and database operations.
+                                    Provides full control over SQL queries and database operations using parameterized queries.
                                 </p>
                                 <span class="badge bg-info">Data Access</span>
-                                <span class="badge bg-secondary ms-2">Coming Soon</span>
                             </div>
                         </div>
                     </div>
@@ -182,10 +180,71 @@
                                 <h5 class="card-title">T-SQL</h5>
                                 <p class="card-text">
                                     Microsoft's extension of SQL for querying and managing data.
-                                    Used for creating tables, queries, and stored procedures.
+                                    Used for creating tables, queries, and managing database schema.
                                 </p>
                                 <span class="badge bg-primary">Query Language</span>
-                                <span class="badge bg-secondary ms-2">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cloud & Hosting -->
+            <section class="mb-5">
+                <h2 class="h3 mb-4">
+                    <span class="badge bg-info me-2">Cloud</span>
+                    Hosting & Infrastructure
+                </h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Azure App Service</h5>
+                                <p class="card-text">
+                                    Fully managed platform for hosting web applications.
+                                    Provides automatic scaling, monitoring, and deployment capabilities.
+                                </p>
+                                <span class="badge bg-primary">PaaS Hosting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Azure SQL Database</h5>
+                                <p class="card-text">
+                                    Cloud database with built-in high availability, backups, and security.
+                                    Provides enterprise-grade data storage without infrastructure management.
+                                </p>
+                                <span class="badge bg-success">Database Service</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Custom Domain & SSL</h5>
+                                <p class="card-text">
+                                    Professional custom domain (dondamitz.com) with free SSL certificate.
+                                    DNS configuration with HTTPS-only enforcement for secure connections.
+                                </p>
+                                <span class="badge bg-danger">Security & DNS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Azure Portal</h5>
+                                <p class="card-text">
+                                    Web-based console for managing cloud resources.
+                                    Used for deployment, monitoring, configuration, and database management.
+                                </p>
+                                <span class="badge bg-info">Management Tool</span>
                             </div>
                         </div>
                     </div>
@@ -209,6 +268,32 @@
                                     Provides code editing, debugging, and project management.
                                 </p>
                                 <span class="badge bg-primary">IDE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Git & GitHub</h5>
+                                <p class="card-text">
+                                    Version control system for tracking code changes and collaboration.
+                                    Source code hosted on GitHub for backup and portfolio showcase.
+                                </p>
+                                <span class="badge bg-dark">Version Control</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Visual Studio Publish</h5>
+                                <p class="card-text">
+                                    Integrated deployment tools for publishing directly to Azure.
+                                    Streamlines the deployment process from development to production.
+                                </p>
+                                <span class="badge bg-primary">Deployment</span>
                             </div>
                         </div>
                     </div>
@@ -241,7 +326,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">HTTPS/SSL</h5>
                                 <p class="card-text">
-                                    Encrypted connections for secure data transmission.
+                                    Encrypted connections with free Azure-managed SSL certificate and HTTPS-only enforcement.
                                 </p>
                             </div>
                         </div>
@@ -250,24 +335,57 @@
                     <div class="col-md-4 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h5 class="card-title">Anti-Forgery Tokens</h5>
+                                <h5 class="card-title">CSRF Protection</h5>
                                 <p class="card-text">
-                                    CSRF protection built into form submissions.
+                                    Anti-forgery tokens automatically included in all form submissions.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-@*                     <div class="col-md-4 mb-3">
+                    <div class="col-md-4 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h5 class="card-title">Parameterized Queries</h5>
+                                <h5 class="card-title">SQL Injection Prevention</h5>
                                 <p class="card-text">
-                                    SQL injection prevention through proper parameter handling.
+                                    Parameterized queries using SqlParameter throughout all database operations.
                                 </p>
                             </div>
                         </div>
-                    </div> *@
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">XSS Protection</h5>
+                                <p class="card-text">
+                                    Automatic output encoding prevents cross-site scripting attacks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Rate Limiting</h5>
+                                <p class="card-text">
+                                    Custom IP-based rate limiting: maximum 5 contact form submissions per 15 minutes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Input Validation</h5>
+                                <p class="card-text">
+                                    Server-side validation using Data Annotations and ModelState.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -275,12 +393,23 @@
             <section class="mb-5">
                 <h2 class="h3 mb-4">Architecture & Design Patterns</h2>
 
-                <div class="alert alert-info">
-                    <h5 class="alert-heading">Razor Pages Pattern (MVVM-like)</h5>
+                <div class="alert alert-primary">
+                    <h5 class="alert-heading">3-Layer Architecture</h5>
                     <p class="mb-0">
-                        This site follows the Razor Pages pattern, where each page combines its view (.cshtml)
-                        with its model/logic (.cshtml.cs). This provides a clean separation of concerns while
-                        keeping related code together, making it easier to maintain and understand.
+                        This application uses a clean 3-layer architecture:
+                        <strong>Presentation Layer</strong> (Razor Pages in Pages/ folder),
+                        <strong>Business Logic Layer</strong> (Services in Services/ folder), and
+                        <strong>Data Access Layer</strong> (Repositories in Data/ folder).
+                        This separation provides maintainability, testability, and clear responsibility boundaries.
+                    </p>
+                </div>
+
+                <div class="alert alert-info">
+                    <h5 class="alert-heading">Repository Pattern</h5>
+                    <p class="mb-0">
+                        Data access is abstracted through the Repository pattern (ContactRepository),
+                        providing a clean interface between the business logic and database operations.
+                        This makes the code more maintainable and testable.
                     </p>
                 </div>
 
@@ -306,22 +435,32 @@
                             in production by companies worldwide.
                         </p>
 
+                        <h5 class="card-title mt-4">Cloud-First Approach</h5>
+                        <p class="card-text">
+                            Deploying to Microsoft Azure demonstrates understanding of cloud platforms,
+                            infrastructure management, and modern DevOps practices. Azure provides
+                            enterprise-grade hosting with minimal configuration.
+                        </p>
+
                         <h5 class="card-title mt-4">Practical Learning</h5>
                         <p class="card-text">
                             Razor Pages was selected for its simplicity and page-focused architecture,
-                            which is perfect for a portfolio site while still teaching modern .NET concepts.
+                            which is perfect for a portfolio site while still teaching modern .NET concepts
+                            and allowing for clean architectural separation.
                         </p>
 
                         <h5 class="card-title mt-4">Full Control</h5>
                         <p class="card-text">
                             Using ADO.NET instead of an ORM gives me direct control over database operations
-                            and SQL queries, demonstrating understanding of fundamental data access patterns.
+                            and SQL queries, demonstrating understanding of fundamental data access patterns
+                            and SQL injection prevention through parameterized queries.
                         </p>
 
                         <h5 class="card-title mt-4">Industry Standard</h5>
                         <p class="card-text">
                             Bootstrap ensures the site looks professional and works across all devices,
-                            following industry-standard design practices.
+                            following industry-standard design practices. Git and GitHub provide version
+                            control and demonstrate collaborative development workflows.
                         </p>
                     </div>
                 </div>

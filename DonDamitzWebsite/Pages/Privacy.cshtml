@@ -46,15 +46,6 @@
                             <li><strong>IP Address:</strong> For security purposes and to prevent spam/abuse</li>
                             <li><strong>Submission Date/Time:</strong> To track when messages were sent</li>
                         </ul>
-
-                        <h3 class="h6 fw-semibold mb-2 mt-4">Automatically Collected Information</h3>
-                        <p>When you visit this website, certain technical information may be collected automatically:</p>
-                        <ul>
-                            <li>Browser type and version</li>
-                            <li>Operating system</li>
-                            <li>Pages you visit and time spent on each page</li>
-                            <li>Referring website (if applicable)</li>
-                        </ul>
                     </section>
 
                     <!-- How I Use Your Information -->
@@ -85,16 +76,10 @@
                             <i class="bi bi-lock text-primary me-2"></i>Data Storage and Security
                         </h2>
                         <p>
-                            Your contact form submissions are stored in a SQL Server database. I implement
+                            Your contact form submissions are stored in a secure Azure SQL Database. I implement
                             several security measures to protect your information, including:
                         </p>
                         <ul>
-@*                             <li>Secure HTTPS connection for all data transmission</li>
-                            <li>Database encryption and access controls</li>
-                            <li>Protection against SQL injection and cross-site scripting (XSS) attacks</li>
-                            <li>Anti-forgery token validation to prevent CSRF attacks</li>
-                            <li>Rate limiting to prevent spam and abuse</li> *@
-
                             <li>
                                 <strong>SQL Injection Prevention:</strong> All database queries use parameterized
                                 statements to prevent SQL injection attacks
@@ -116,7 +101,7 @@
                                 server side
                             </li>
                             <li>
-                                <strong>HTTPS in Production:</strong> When deployed, the site uses HTTPS to encrypt
+                                <strong>HTTPS Encryption:</strong> All data transmission is encrypted using HTTPS/SSL
                                 data in transit
                             </li>
                         </ul>
