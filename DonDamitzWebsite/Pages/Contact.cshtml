@@ -72,7 +72,7 @@
                             </label>
                             <input asp-for="ContactMessage.Subject"
                                    class="form-control form-control-lg"
-                                   placeholder="What would you like to discuss?" />
+                                   placeholder="Brief summary of your inquiry" />
                             <span asp-validation-for="ContactMessage.Subject" class="text-danger small"></span>
                         </div>
 
@@ -84,7 +84,7 @@
                             <textarea asp-for="ContactMessage.Message"
                                       class="form-control form-control-lg"
                                       rows="6"
-                                      placeholder="Tell me about your project, question, or how I can help you..."
+                                      placeholder="What would you like to discuss?"
                                       style="resize: vertical;"></textarea>
                             <span asp-validation-for="ContactMessage.Message" class="text-danger small"></span>
                             <div class="form-text">
